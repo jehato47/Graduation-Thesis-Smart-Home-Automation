@@ -1,4 +1,4 @@
-# Graduation Thesis: Smart Home Automation
+# Graduation Thesis: Smart Home Automation 🏡🔧
 
 ## Overview
 
