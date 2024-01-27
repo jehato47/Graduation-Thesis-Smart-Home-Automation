@@ -72,3 +72,5 @@ Welcome to the repository for the Graduation Thesis project on Smart Home Automa
 ## Acknowledgments
 
 - The firmware uses the [Firebase ESP Client Library](https://github.com/mobizt/Firebase-ESP-Client) for communication with the Firebase Realtime Database.
+
+- Special thanks to **Jehat Armanç Deniz** and **Tuğba Göven** for their contributions to the development and implementation of the ESP32 firmware.
