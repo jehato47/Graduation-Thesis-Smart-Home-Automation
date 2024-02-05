@@ -33,7 +33,7 @@ class SmartDeviceBox extends StatelessWidget {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            if (smartDeviceName == "Smart Light" && powerOn)
+            if (smartDeviceName == "Smart AC" && powerOn)
               Positioned(
                 top: 10,
                 left: 10,

@@ -1,4 +1,4 @@
-import 'package:cu_smart_home/models/notification_model.dart';
+import '../models/notification_model.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
@@ -111,6 +111,7 @@ class NtProvider extends ChangeNotifier {
         isRead: isRead as bool,
       ),
     );
+
     // sort notifications according to date
     notifications.sort((a, b) => b.time.compareTo(a.time));
     notifyListeners();

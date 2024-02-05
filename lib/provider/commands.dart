@@ -58,7 +58,7 @@ class Commands extends ChangeNotifier {
         mySmartDevices[1][2] = value == "open_state" ? true : false;
       } else if (key == "tv") {
         mySmartDevices[2][2] = value == "open_state" ? true : false;
-      } else if (key == "fan") {
+      } else if (key == "valve") {
         mySmartDevices[3][2] = value == "open_state" ? true : false;
       } else if (key == "led_brightness") {
         ledBrightness = double.parse(value.toString());
@@ -140,7 +140,7 @@ class Commands extends ChangeNotifier {
 
   Future<void> openFan() async {
     DatabaseReference ref = FirebaseDatabase.instance.ref("interiorLighting");
-    values["fan"] = "open_state";
+    values["valve"] = "open_state";
     await ref.update(values);
 
     // await ref.set({"fan": "open_state"});
@@ -148,7 +148,7 @@ class Commands extends ChangeNotifier {
 
   Future<void> closeFan() async {
     DatabaseReference ref = FirebaseDatabase.instance.ref("interiorLighting");
-    values["fan"] = "close_state";
+    values["valve"] = "close_state";
     await ref.update(values);
 
     // await ref.set({"fan": "close_state"});

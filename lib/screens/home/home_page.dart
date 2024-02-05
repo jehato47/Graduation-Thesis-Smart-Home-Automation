@@ -171,7 +171,7 @@ class _HomePageState extends State<HomePage> {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onLongPress: () {
-                      if (index == 0) {
+                      if (index == 1) {
                         showModalBottomSheet(
                           context: context,
                           builder: (context) {
